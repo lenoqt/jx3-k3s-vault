@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: pneumasoft-web
     - name: pneumasoft-web-
     scheduler: in-repo
   slack:
