@@ -6,14 +6,6 @@ data:
       repos:
       - lenoqt/jx3-k3s-vault
       require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - lenoqt/pneumasoft-web
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - wilmerco/pneumasoft-web
-      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -29,16 +21,6 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
-      lenoqt/pneumasoft-web:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
-      wilmerco/pneumasoft-web:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -46,38 +28,6 @@ data:
     plugins:
       lenoqt/jx3-k3s-vault:
       - config-updater
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      lenoqt/pneumasoft-web:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      wilmerco/pneumasoft-web:
       - approve
       - assign
       - blunderbuss
@@ -105,14 +55,6 @@ data:
     - repos:
       - lenoqt/jx3-k3s-vault
       trusted_org: todo
-    - repos:
-      - lenoqt/pneumasoft-web
-      trusted_org: todo
-    - repos:
-      - wilmerco/pneumasoft-web
-      trusted_org: todo
-    welcome:
-    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
