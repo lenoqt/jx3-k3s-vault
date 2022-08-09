@@ -7,14 +7,10 @@ spec:
   - owner: lenoqt
     provider: https://github.com
     providerKind: github
-    repositories:
-    - name: pneumasoft-web
     scheduler: in-repo
   - owner: wilmerco
     provider: https://github.com
     providerKind: github
-    repositories:
-    - name: pneumasoft-web
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
