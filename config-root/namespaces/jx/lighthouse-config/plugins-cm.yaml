@@ -8,7 +8,7 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - lenoqt/pneumasoft-web-
+      - lenoqt/pneumasoft-web
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -29,7 +29,7 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
-      lenoqt/pneumasoft-web-:
+      lenoqt/pneumasoft-web:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -61,7 +61,7 @@ data:
       - cat
       - dog
       - pony
-      lenoqt/pneumasoft-web-:
+      lenoqt/pneumasoft-web:
       - approve
       - assign
       - blunderbuss
@@ -106,7 +106,7 @@ data:
       - lenoqt/jx3-k3s-vault
       trusted_org: todo
     - repos:
-      - lenoqt/pneumasoft-web-
+      - lenoqt/pneumasoft-web
       trusted_org: todo
     - repos:
       - wilmerco/pneumasoft-web

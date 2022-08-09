@@ -8,7 +8,7 @@ data:
     in_repo_config:
       enabled:
         lenoqt/jx3-k3s-vault: true
-        lenoqt/pneumasoft-web-: true
+        lenoqt/pneumasoft-web: true
         wilmerco/pneumasoft-web: true
     plank: {}
     pod_namespace: jx
@@ -22,7 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         lenoqt/jx3-k3s-vault: merge
-        lenoqt/pneumasoft-web-: merge
+        lenoqt/pneumasoft-web: merge
         wilmerco/pneumasoft-web: merge
       queries:
       - labels:
@@ -35,7 +35,7 @@ data:
         - needs-rebase
         repos:
         - lenoqt/jx3-k3s-vault
-        - lenoqt/pneumasoft-web-
+        - lenoqt/pneumasoft-web
         - wilmerco/pneumasoft-web
       - labels:
         - updatebot
@@ -47,7 +47,7 @@ data:
         - needs-rebase
         repos:
         - lenoqt/jx3-k3s-vault
-        - lenoqt/pneumasoft-web-
+        - lenoqt/pneumasoft-web
         - wilmerco/pneumasoft-web
       target_url: http://lighthouse.jx.192.168.0.9.nip.io/merge/status
 kind: ConfigMap
