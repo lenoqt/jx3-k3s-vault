@@ -7,6 +7,8 @@ spec:
   - owner: lenoqt
     provider: https://github.com
     providerKind: github
+    repositories:
+    - name: zero2prod
     scheduler: in-repo
   - owner: wilmerco
     provider: https://github.com
